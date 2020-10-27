@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website of the FAST ANR project on Fast Audio Signal-processing Technologies on FPGA">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>FAST Project</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">FAST Project</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="overview/" class="nav-link">Overview</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="jobs/" class="nav-link">Jobs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="contacts/" class="nav-link">Contacts</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12 main-container home-container" role="main">
+
+<h1 id="fast-fast-audio-signal-processing-technologies-on-fpga">FAST: Fast Audio Signal-processing Technologies on FPGA</h1>
+<p>FAST is a research project funded by the <a href="https://anr.fr/">Agence Nationale de la Recherche</a> (ANR -- the French National Research Agency). It gathers the strength of <a href="https://www.grame.fr">GRAME-CNCM</a>, <a href="http://www.citi-lab.fr/">CITI Lab (INSA Lyon)</a>, and <a href="http://lmfa.ec-lyon.fr/?lang=en">LMFA (École Centrale Lyon)</a> towards two goals: </p>
+<ul>
+<li>facilitate the design of ultra-low latency embedded systems for real-time audio signal processing,</li>
+<li>use such systems in the context of active control of acoustics. </li>
+</ul>
+<p><center>
+<b>Faust Programming Language -&gt; Audio on FPGA -&gt; Active control of acoustics</b>
+</center></p>
+<h2 id="what-is-fast">What is FAST?</h2>
+<p>Embedded systems for audio and multimedia are increasingly used in the arts and culture (e.g., interactive systems, musical instruments, virtual and augmented reality, artistic creation tools, etc.). They are typically based on a CPU (Central Processing Unit) which limits their computational power and induces some latency. FPGAs (Field Programmable Gate Arrays) can be seen as a solution to these problems. However, these types of chips are extremely complex to program, making them largely inaccessible to musicians, digital artists and makers communities. The goal of the FAST project is to enable high-level programming of FPGA-based platforms for multichannel ultra-low-latency audio processing using the Faust programming language (a standard in the field of computer music). We plan to use this system for various applications ranging from sound synthesis and processing to active sound control and artificial sound field/room acoustics.</p>
+<p><img src="img/overview.jpg" class="mx-auto d-block" width="60%"></p>
+<h2 id="timeline">Timeline</h2>
+<p>FAST will begin in March 2021 and will last 42 months. </p>
+<h2 id="partners">Partners</h2>
+<h3 id="grame-cncm">GRAME-CNCM</h3>
+<p>GRAME is a "Centre National de Création Musicale" (National Centre for Musical Creation) funded by the French ministry of culture, the Auvergne-Rhône-Alpes region and the city of Lyon. It is organized in three departments: production/music creation, transmission, and research. GRAME's research department hosts four permanent researchers as well as PhD students, postdocs, engineers, interns, etc. Its activities focus on music technology and computer music. GRAME is the birthplace of the <a href="https://faust.grame.fr">Faust programming language</a> which is used at the heart of FAST.</p>
+<h3 id="citi-lab-insa-lyon">CITI Lab @ INSA Lyon</h3>
+<p>CITI is an academic laboratory associated with <a href="https://www.insa-lyon.fr/en/">INSA Lyon</a> and <a href="https://www.inria.fr/fr">INRIA</a>. The CITI Laboratory develops research activities bringing together computer science, networking, and digital communications to address the challenging issues related to the development of Internet. One of CITI's research focus is on FPGAs which are heavily used as part of FAST. </p>
+<h3 id="lmfa-ecole-centrale-lyon">LMFA @ École Centrale Lyon</h3>
+<p>The LMFA is the Laboratoire de Mécanique des Fluides et d'Acoustique (Fluid Mechanics and Acoustics Laboratory). It hosts researchers from <a href="https://www.ec-lyon.fr/">École Centrale Lyon</a>, <a href="https://www.insa-lyon.fr/en/">INSA Lyon</a>, <a href="https://www.univ-lyon1.fr/">Université Claude Bernard Lyon 1</a> and <a href="http://www.cnrs.fr/fr">CNRS</a>. The members of LMFA associated to the FAST project specialize in acoustics active control which is one of the focus of FAST.  </p>
+<p><center>
+<img src="img/logoANR.png" width="16%">
+<img src="img/logoGrame.png" width="20%">
+<img src="img/logoCiti.png" width="12%">
+<img src="img/logoInsa.png" width="20%"><br>
+<img src="img/logoLMFA.jpg" width="14%">
+<img src="img/logoCentrale.png" width="25%">
+</center></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2020 <a href="http://www.grame.fr">Grame-CNCM</a>, <a href="http://www.citi-lab.fr/">CITI Lab</a> & <a href="http://lmfa.ec-lyon.fr/?lang=en">LMFA</a></p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.1
+Build Date UTC : 2020-10-27 15:38:04
+-->
