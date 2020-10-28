@@ -1,0 +1,37 @@
+\begin{boxedminipage}{9cm}
+\begin{tikzpicture}[>=stealth']
+	\node[ellipse, draw=black] (dsp) at (0,0){Faust.dsp};
+	\node[rounded corners=0.15cm, draw=black, below of=dsp, yshift=-.25cm]
+(fstCompile){\footnotesize Faust compiler};
+	\node[rounded corners=0.15cm, draw=black, left of=fstCompile,align=center,xshift=-2cm, yshift=-.7cm]%
+(fstCompileBitWidthCpp) {\footnotesize Faust Compiler\\+\\ \footnotesize Bitwidth  analysis (T1.1) \\+\\ \footnotesize Fix-point backend (T1.2)};
+	\node[rounded corners=0.15cm, draw=black, right of=fstCompile,align=center,xshift=2cm, yshift=-.7cm]%
+(fstCompileBitWidthHDL) {\footnotesize Faust Compiler\\+\\ \footnotesize Bitwidth  analysis (T1.1)\\+\\ \footnotesize VHDL Backend (T1.3) };
+
+	\draw (dsp.south) ++(0, -.2) coordinate(junction);
+	\draw [rounded corners, ->] (dsp.south) -- (junction) -| (fstCompileBitWidthCpp.north); 
+	\draw [rounded corners, ->] (dsp.south) -- (junction) -|(fstCompileBitWidthHDL.north); 
+	\draw[->] (dsp.south) -- (fstCompile);
+	
+	\node[draw=black, ellipse, below of=fstCompile] (cFstCpp) {Faust.cpp};
+	\draw[->] (fstCompile.south) -- (cFstCpp.north);
+	\node[draw=black, rounded corners=0.15cm, below of=cFstCpp](cVHLS){\footnotesize Vivado HLS};
+	\draw[->] (cFstCpp) -- (cVHLS);
+	\node[draw=black, ellipse, below of=cVHLS] (fstVHD){Faust.vhd};
+	\draw[->] (cVHLS) -- (fstVHD);
+
+	\node[dashed, minimum width=1.5cm, minimum height=.75cm, yshift=-.6cm, rounded corners=0.15cm, draw=black, below of=fstCompileBitWidthCpp]%
+		(flopocoL) {\footnotesize FloPoCo};
+	\draw[->] (fstCompileBitWidthCpp.250) [bend right] to (flopocoL.110);
+	\draw[->] (flopocoL.70) [bend right] to (fstCompileBitWidthCpp.290);
+	\draw[->] (fstCompileBitWidthCpp.east) [out=0, in=160] to (cFstCpp); 
+
+	\node[dashed, minimum width=1.5cm, minimum height=.75cm,yshift=-.6cm, rounded corners=0.15cm, draw=black, below of=fstCompileBitWidthHDL]%
+		(flopocoR) {\footnotesize FloPoCo};
+	\draw[->] (fstCompileBitWidthHDL.250) [bend right] to (flopocoR.110);
+	\draw[->] (flopocoR.70) [bend right] to (fstCompileBitWidthHDL.290);
+	\draw[->] (fstCompileBitWidthHDL.west)  [out=180, in=25] to (fstVHD.25);
+
+\end{tikzpicture}
+\vspace{0.1cm}
+\end{boxedminipage}

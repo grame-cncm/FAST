@@ -1,0 +1,33 @@
+\begin{boxedminipage}{6cm}
+  \begin{tikzpicture}[>=stealth']
+	\node[ellipse, draw=black] (dsp) at (0,0){Faust.dsp};
+	\node[rounded corners=0.15cm,align=center, draw=black, below of=dsp, yshift=-.25cm,text width=2.6cm]
+        (fstCompile) {\footnotesize Faust Compiler\\ (from  WP1)};
+
+	\draw[->] (dsp.south) -- (fstCompile);
+	\node[draw=black, ellipse, below of=fstCompile] (cFstCpp) {Faust.cpp};
+        \draw[->] (fstCompile.south) -- (cFstCpp.north);
+        \node[draw=black, rounded corners=0.15cm, below of=cFstCpp](cVHLS){\footnotesize Vivado HLS};
+  
+    \node[ right of=dsp,align=center,xshift=2cm, yshift=-0.5cm] (bd) 
+      {\includegraphics[width=2cm]{design_whole_zoom.pdf}};
+    \node[ above of=bd,align=center,xshift=-0.5cm, yshift=-0.7cm] (blockdesign) {\scriptsize vivado block design};
+
+    
+	\draw[->] (cFstCpp) -- (cVHLS);
+	\node[draw=black, ellipse, below of=cVHLS] (fstVHD){Faust.vhd};
+	\draw[->] (cVHLS) -- (fstVHD);
+	\node[draw=black, rounded corners=0.15cm, below of=bd, yshift=-0.2cm](vivado){\footnotesize Vivado};
+        \draw[->] (bd.south)  to (vivado.north); 
+	\draw[->] (fstVHD)  [out=25, in=185] to (bd.center);
+
+	\node[minimum width=1.5cm, yshift=0cm,minimum height=0.75cm,fill=gray!20,draw=black, below of=vivado] (bitstream) {bistream.bit};
+	\draw[->](vivado)--(bitstream);
+            \node[ below of=bitstream,align=center,xshift=0cm, yshift=0cm] (zybo) 
+    {\includegraphics[width=1.5cm]{zybo.jpg}};
+    \draw[->, line width=2, color=gray] (bitstream.south) [out=270, in=90] to (zybo.center); 
+    \node[ below of=zybo,align=center, yshift=0.2cm] (zb) 
+    {\scriptsize Zybo board};
+
+\end{tikzpicture}
+\end{boxedminipage}
