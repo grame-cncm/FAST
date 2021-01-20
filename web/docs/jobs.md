@@ -12,6 +12,8 @@ The objective of this PhD is to combine the [Faust programming language](https:/
 
 **Starting Date:** First half of 2021
 
+**Duration:** 6 months
+
 The goal of this masters internship is to compile the [Faust programming language](https://faust.grame.fr) to VHDL without using High Level Synthesis (HLS). This tool will be integrated in a "Faust to FPGA compiler" to facilitate the design of FPGA-based systems for ultra-low latency (less than 50 microseconds) real-time audio signal processing.
 
 **Full description and profile [here](misc/fast-masters-21.pdf).**
