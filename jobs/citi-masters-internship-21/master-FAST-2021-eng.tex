@@ -1,0 +1,73 @@
+\documentclass[a4paper,francais,11]{article}
+\usepackage{authblk}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage[dvips,dvipsnames]{color}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+%\usepackage{fullpage}
+\usepackage{a4wide}
+%\usepackage{pstricks}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+
+\graphicspath{{fig/}{logos/}}
+
+\title{Masters Internship Topic\\
+  Faust2FPGA: Compilation from Faust to VHDL}
+\date{}
+
+\author[1]{Tanguy Risset}
+\author[1]{Florent de Dinechin}
+\author[2]{Yann Orlarey}
+\author[2]{Romain Michon}
+\affil[1]{Citi/Socrate, Insa-Lyon, Inria~\url{https://team.inria.fr/socrate/} }
+\affil[2]{GRAME-CNCM, Lyon~\url{http://www.grame.fr/}}
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+Faust is a programming language specifically designed for real-time audio signal processing applications. The Faust compiler makes it possible to quickly develop efficient and reliable software for the main audio platforms (i.e., VST and AU plugins, Max/MSP, PureData, macOS, iOS, Android, Web, Linux, etc.). The objective of this Masters internship is to compile the Faust programming language\footnote{\url{https://faust.grame.fr}}~\cite{faust} directly to VHDL without using High Level Synthesis (HLS). This tool will be integrated in a  ``Faust to FPGA compiler'' to facilitate the design of FPGA-based systems for ultra-low latency (less than 50 microseconds) real-time audio signal processing. It will be funded by the ANR FAST project (Fast Audio Signal-processing Technologies on FPGA, \url{https://fast.grame.fr/}) that will start in March 2021. The goal of FAST is to design a complete FPGA compiler to solve difficult problems such as active acoustic control. The {\tt Faust2VHDL} tool developed as part of this internship will probably not apply to all Faust programs (the ones with long delay lines will require the external memory which cannot be directly accessed from VHDL) but might be useful for simple synthesis programs.
+
+ Faust is developed by GRAME and was created by Yann Orlarey who will act as one of the supervisor for this internship. Faust has been increasingly used in recent years in the music technology research community as well as in the industry (e.g., MoForte, Analog Devices, etc.).
+
+All real-time audio systems induce some latency: software sound processing needs each audio sample to go through all the software layers and the hardware audio interface. For example, it might take a few millisecond between a key-press and the resulting sound. While a latency of a few milliseconds is acceptable for most applications, the active correction of the resonance of an acoustic instrument, for example, requires a latency of the order of one or two samples, which cannot be achieved by ``standard'' audio systems. On the other hand, FPGA platforms can take latency down below 50 microseconds. Some works have already proposed this type of FPGA acceleration in this context~\cite{Kuper}. However, FPGAs must be manually programmed, which is much more complex than programming a conventional computer.
+
+
+The Faust compiler can currently produce C++ code. In order to program FPGA platforms, the FAST project will explore recent industrial High Level Synthesis (HLS) tools. An alternative direct flow from FPGA to VHDL will  be explored in this internship. The  first prototype {\tt Faust2FPGA} compiler which was built as part of the Syfala project\footnote{\url{https://faust.grame.fr/syfala/}}~\cite{risset2020} using the {\tt vivado\_hls} tool from Xilinx will be useful since all the technical difficulties for interfacing audio programs have been solved for the Xilinx Zybo board.
+
+
+
+\paragraph{Internship Conditions}
+The internship will be based in Lyon (France), in the Socrate/Emeraude team (CITI, INSA, the team is moving from Socrate to Emeraude). The Emeraude team is working on embedded systems and FPGA, and very low consumption systems. This internship will also be carried out in collaboration with the GRAME research team responsible for the development of Faust. 
+
+The internship will be organized as follows:
+\begin{itemize}
+\item  The candidate will get familiar with the different tools: Faust, VHDL, compilation technologies, Xilinx tools for synthesis as well as the existing prototype compilation flow from the SyFaLa project.
+\item  Then the  candidate will:
+  \begin{itemize}
+    \item Provide a state of the art of the recent compilation technologies that could possibly be used for the compiler
+    \item Propose an extension of the Faust compiler to handle simple programs
+       (fixed delay, no complex arithmetic functions, no controllers)
+    \item Implement this extension and use it to compile a simple program on the Zybo board\footnote{\url{https://www.xilinx.com/products/boards-and-kits/1-pukio3.html}}
+  \item Propose a way to implement control over the synthesized IP, either with hardware (with physical knobs) or software (via the Zynq processing system on Zybo for instance)
+  \item Validate the flow on audio examples and provide simple demonstrations
+  \end{itemize}
+\end{itemize}
+
+The main required skills are basic training in compilation, system programming and FPGA. Experience in embedded programming will be necessary too. The mastering of the C and C++ languages as well as solid foundations in computer architecture are important too. Finally, basic signal processing (and if possible audio signal processing)  will be very useful. 
+%% \nocite{*}
+\bibliographystyle{alpha}
+\bibliography{master-FAST-2021-eng}
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
