@@ -4,6 +4,8 @@ hide_toc: true
 
 # FAST: Fast Audio Signal-processing Technologies on FPGA
 
+<img src="img/logoFAST.png" class="mx-auto d-block" width="30%">
+
 FAST is a research project funded by the [Agence Nationale de la Recherche](https://anr.fr/) (ANR -- the French National Research Agency). It gathers the strength of [GRAME-CNCM](https://www.grame.fr), [CITI Lab (INSA Lyon)](http://www.citi-lab.fr/), and [LMFA (École Centrale Lyon)](http://lmfa.ec-lyon.fr/?lang=en) towards two goals: 
 
 * facilitate the design of ultra-low latency embedded systems for real-time audio signal processing,
@@ -38,7 +40,7 @@ CITI is an academic laboratory associated with [INSA Lyon](https://www.insa-lyon
 The LMFA is the Laboratoire de Mécanique des Fluides et d'Acoustique (Fluid Mechanics and Acoustics Laboratory). It hosts researchers from [École Centrale Lyon](https://www.ec-lyon.fr/), [INSA Lyon](https://www.insa-lyon.fr/en/), [Université Claude Bernard Lyon 1](https://www.univ-lyon1.fr/) and [CNRS](http://www.cnrs.fr/fr). The members of LMFA associated to the FAST project specialize in acoustics active control which is one of the focus of FAST.  
 
 <center>
-<img src="img/logoANR.png" width="16%">
+<img src="img/logoANR.png" width="12%">
 <img src="img/logoGrame.png" width="20%">
 <img src="img/logoCiti.png" width="12%">
 <img src="img/logoInsa.png" width="20%"><br>
