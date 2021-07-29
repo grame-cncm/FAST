@@ -21,7 +21,7 @@ LFO = os.lf_triangle(lfoFreq)*0.5 + 0.5;
 process = os.sawtooth(oscFreq)*oscGain + no.noise*noiseGain : fi.resonlp(LFO*lfoRange+50,5,1);
 ```
 
-(you can try it in your browser by pasting in the [Faust Web IDE](https://faustide.grame.fr)).
+(you can try it directly in your Web browser in the [Faust Web IDE](https://faustide.grame.fr/?autorun=1&voices=0&name=untitled2&inline=aW1wb3J0KCJzdGRmYXVzdC5saWIiKTsKb3NjRnJlcSA9IGhzbGlkZXIoIm9zY0ZyZXEiLDgwLDUwLDUwMDAsMC4wMSk7Cmxmb0ZyZXEgPSBoc2xpZGVyKCJsZm9GcmVxIiwxLDAuMDEsNTAsMC4wMSk7Cmxmb1JhbmdlID0gaHNsaWRlcigibGZvUmFuZ2UiLDEwMDAsMTAsNTAwMCwwLjAxKTsKb3NjR2FpbiA9IGhzbGlkZXIoIm9zY0dhaW4iLDAuNSwwLDEsMC4wMSk7Cm5vaXNlR2FpbiA9IGhzbGlkZXIoIm5vaXNlR2FpbiIsMCwwLDEsMC4wMSk7CkxGTyA9IG9zLmxmX3RyaWFuZ2xlKGxmb0ZyZXEpKjAuNSArIDAuNTsKcHJvY2VzcyA9IG9zLnNhd3Rvb3RoKG9zY0ZyZXEpKm9zY0dhaW4gKyBuby5ub2lzZSpub2lzZUdhaW4gOiBmaS5yZXNvbmxwKExGTypsZm9SYW5nZSs1MCw1LDEpOw%3D%3D)).
 
 Next steps involve: 
 
