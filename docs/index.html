@@ -34,13 +34,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="overview/" class="nav-link">Overview</a>
+                                <a href="overview.html" class="nav-link">Overview</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Results <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="results/processor.html" class="dropdown-item">Faust FPGA Audio Processor Prototype</a>
+</li>
+                                </ul>
                             </li>
                             <li class="navitem">
-                                <a href="jobs/" class="nav-link">Jobs</a>
+                                <a href="jobs.html" class="nav-link">Jobs</a>
                             </li>
                             <li class="navitem">
-                                <a href="contacts/" class="nav-link">Contacts</a>
+                                <a href="contacts.html" class="nav-link">Contacts</a>
                             </li>
                         </ul>
 
@@ -69,11 +78,19 @@
 <p><center>
 <b>Faust Programming Language -&gt; Audio on FPGA -&gt; Active control of acoustics</b>
 </center></p>
+<h2 id="news">News</h2>
+<h3 id="july-2021-first-prototype-of-the-fast-fpga-audio-processor">July 2021: First Prototype of the FAST FPGA Audio Processor</h3>
+<p><center></p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/acMhZe8V2ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p></center></p>
+<p><center>
+<strong>Read <a href="results/processor.html">this article</a> for more information.</strong>
+</center></p>
 <h2 id="what-is-fast">What is FAST?</h2>
 <p>Embedded systems for audio and multimedia are increasingly used in the arts and culture (e.g., interactive systems, musical instruments, virtual and augmented reality, artistic creation tools, etc.). They are typically based on a CPU (Central Processing Unit) which limits their computational power and induces some latency. FPGAs (Field Programmable Gate Arrays) can be seen as a solution to these problems. However, these types of chips are extremely complex to program, making them largely inaccessible to musicians, digital artists and makers communities. The goal of the FAST project is to enable high-level programming of FPGA-based platforms for multichannel ultra-low-latency audio processing using the Faust programming language (a standard in the field of computer music). We plan to use this system for various applications ranging from sound synthesis and processing to active sound control and artificial sound field/room acoustics.</p>
 <p><img src="img/overview.jpg" class="mx-auto d-block" width="60%"></p>
 <h2 id="timeline">Timeline</h2>
-<p>FAST will begin in March 2021 and will last 42 months. </p>
+<p>FAST begun in March 2021 and will last 42 months. </p>
 <h2 id="partners">Partners</h2>
 <h3 id="grame-cncm">GRAME-CNCM</h3>
 <p>GRAME is a "Centre National de Création Musicale" (National Centre for Musical Creation) funded by the French ministry of culture, the Auvergne-Rhône-Alpes region and the city of Lyon. It is organized in three departments: production/music creation, transmission, and research. GRAME's research department hosts four permanent researchers as well as PhD students, postdocs, engineers, interns, etc. Its activities focus on music technology and computer music. GRAME is the birthplace of the <a href="https://faust.grame.fr">Faust programming language</a> which is used at the heart of FAST.</p>
@@ -112,16 +129,13 @@
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
+                <p>From here you can search these documents. Enter your search terms below.</p>
                 <form>
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
@@ -172,6 +186,6 @@
 </html>
 
 <!--
-MkDocs version : 1.1.2
-Build Date UTC : 2021-04-20 08:27:11.344358+00:00
+MkDocs version : 1.2.1
+Build Date UTC : 2021-07-29 09:25:11.249616+00:00
 -->

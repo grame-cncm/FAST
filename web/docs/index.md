@@ -15,6 +15,18 @@ FAST is a research project funded by the [Agence Nationale de la Recherche](http
 <b>Faust Programming Language -> Audio on FPGA -> Active control of acoustics</b>
 </center>
 
+## News
+
+### July 2021: First Prototype of the FAST FPGA Audio Processor
+
+<center>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/acMhZe8V2ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<center>
+**Read [this article](results/processor.md) for more information.**
+</center>
+
 ## What is FAST?
 
 Embedded systems for audio and multimedia are increasingly used in the arts and culture (e.g., interactive systems, musical instruments, virtual and augmented reality, artistic creation tools, etc.). They are typically based on a CPU (Central Processing Unit) which limits their computational power and induces some latency. FPGAs (Field Programmable Gate Arrays) can be seen as a solution to these problems. However, these types of chips are extremely complex to program, making them largely inaccessible to musicians, digital artists and makers communities. The goal of the FAST project is to enable high-level programming of FPGA-based platforms for multichannel ultra-low-latency audio processing using the Faust programming language (a standard in the field of computer music). We plan to use this system for various applications ranging from sound synthesis and processing to active sound control and artificial sound field/room acoustics.
@@ -23,7 +35,7 @@ Embedded systems for audio and multimedia are increasingly used in the arts and 
 
 ## Timeline
 
-FAST will begin in March 2021 and will last 42 months. 
+FAST begun in March 2021 and will last 42 months. 
 
 ## Partners
 
