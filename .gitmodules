@@ -1,0 +1,3 @@
+[submodule "syfala"]
+	path = syfala
+	url = https://github.com/inria-emeraude/syfala
