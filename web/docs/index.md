@@ -17,6 +17,16 @@ FAST is a research project funded by the [Agence Nationale de la Recherche](http
 
 ## News
 
+### January 2022: Lower Latency & Hardware Control Interface
+
+<center>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/_Cwk7LwjXGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<center>
+**Read [this article](results/processor.md) for more information.**
+</center>
+
 ### July 2021: First Prototype of the FAST FPGA Audio Processor
 
 <center>

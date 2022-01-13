@@ -1,5 +1,17 @@
 # FAST FPGA Audio Processor Prototype   
 
+## January 2022 Milestone
+
+<center>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/_Cwk7LwjXGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+Our current prototype of the FAST FPGA Audio Processor can reach a latency inferior to 10us thanks to the use of high-end audio codecs such as the ADAU1787. A major breakthrough since the previous version is our ability to use DDR memory on the board, allowing us to run DSP algorithms with large memory footprints such as echos, reverbs, etc.
+
+A PCB has been developed to create a wide range of hardware interfaces to control the DSP running on the processor. 
+
+## July 2021 Milestone
+
 <center>
 <iframe width="800" height="450" src="https://www.youtube.com/embed/acMhZe8V2ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
