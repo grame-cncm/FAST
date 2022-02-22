@@ -17,6 +17,10 @@ FAST is a research project funded by the [Agence Nationale de la Recherche](http
 
 ## News
 
+### February 2022: The FAST Programming Tool-Chain Is Now Available on GitHub
+
+Until now, the tool-chain developed as part of FAST ("SyFaLa Tool-chain") was not public. It is now freely accessible on GitHub: <https://github.com/inria-emeraude/syfala>. Enjoy!
+
 ### January 2022: Lower Latency & Hardware Control Interface
 
 <center>

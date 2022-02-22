@@ -5,6 +5,7 @@ nav:
     - Overview : overview.md
     - Results :
          - 'Faust FPGA Audio Processor Prototype': results/processor.md
+         - 'SyFaLa Tool-Chain': https://github.com/inria-emeraude/syfala
     - Jobs : jobs.md
     - Contacts : contacts.md
       
