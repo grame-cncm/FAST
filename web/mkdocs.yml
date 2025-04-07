@@ -1,19 +1,21 @@
-site_name: FAST Project
+site_name: FAST ANR Project
 site_description: Website of the FAST ANR project on Fast Audio Signal-processing Technologies on FPGA
 copyright: Copyright &copy; 2020 <a href="http://www.grame.fr">Grame-CNCM</a>, <a href="http://www.citi-lab.fr/">CITI Lab</a> & <a href="http://lmfa.ec-lyon.fr/?lang=en">LMFA</a>
 nav:
     - Overview : overview.md
     - Results :
-         - 'Faust FPGA Audio Processor Prototype': results/processor.md
+         - 'Practical Results': results.md
+         - 'Publications': https://anr.hal.science/search/index/?q=*&anrProjectReference_s=ANR-20-CE38-0001
          - 'SyFaLa Tool-Chain': https://github.com/inria-emeraude/syfala
-    - Jobs : jobs.md
     - Contacts : contacts.md
       
 theme: 
   name: mkdocs
-  custom_dir: 'theme'
   navigation_depth: 4
-  
+
+extra_css:
+    - custom.css
+
 site_dir: ../docs
 
 plugins:

@@ -16,4 +16,7 @@ with{
     fader(5) = vslider("Band4 [slider:8]", -10, -70, 10, 0.1) : si.smoo;
 };
 
+
+
+
 process = mth_octave_filterbank_demo(1);

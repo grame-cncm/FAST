@@ -1,0 +1,13 @@
+body::before{
+    background: none !important;
+}
+
+.bg-primary{
+    background-color: rgb(120, 150, 60) !important;
+    background-image: none !important;
+}
+
+.navbar-collapse{
+    color: rgb(120, 150, 60) !important;
+}
+

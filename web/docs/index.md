@@ -6,52 +6,22 @@ hide_toc: true
 
 <img src="img/logoFAST.png" class="mx-auto d-block" width="30%">
 
-FAST is a research project funded by the [Agence Nationale de la Recherche](https://anr.fr/) (ANR -- the French National Research Agency). It gathers the strength of [GRAME-CNCM](https://www.grame.fr), [CITI Lab (INSA Lyon)](http://www.citi-lab.fr/), and [LMFA (École Centrale Lyon)](http://lmfa.ec-lyon.fr/?lang=en) towards two goals: 
+FAST (ANR-20-CE38-0001) was (2021-2025) a research project funded by the [Agence Nationale de la Recherche](https://anr.fr/) (ANR -- the French National Research Agency). It gathered the strength of [GRAME-CNCM](https://www.grame.fr), [CITI Lab (INSA Lyon)](http://www.citi-lab.fr/), and [LMFA (École Centrale Lyon)](http://lmfa.ec-lyon.fr/?lang=en) towards two goals: 
 
-* facilitate the design of ultra-low latency embedded systems for real-time audio signal processing,
-* use such systems in the context of active control of acoustics. 
+* facilitating the design of ultra-low latency embedded systems for real-time audio signal processing,
+* using such systems in the context of active control of acoustics. 
 
 <center>
 <b>Faust Programming Language -> Audio on FPGA -> Active control of acoustics</b>
 </center>
 
-## News
-
-### February 2022: The FAST Programming Tool-Chain Is Now Available on GitHub
-
-Until now, the tool-chain developed as part of FAST ("SyFaLa Tool-chain") was not public. It is now freely accessible on GitHub: <https://github.com/inria-emeraude/syfala>. Enjoy!
-
-### January 2022: Lower Latency & Hardware Control Interface
-
-<center>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/_Cwk7LwjXGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-<center>
-**Read [this article](results/processor.md) for more information.**
-</center>
-
-### July 2021: First Prototype of the FAST FPGA Audio Processor
-
-<center>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/acMhZe8V2ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-<center>
-**Read [this article](results/processor.md) for more information.**
-</center>
-
-## What is FAST?
-
-Embedded systems for audio and multimedia are increasingly used in the arts and culture (e.g., interactive systems, musical instruments, virtual and augmented reality, artistic creation tools, etc.). They are typically based on a CPU (Central Processing Unit) which limits their computational power and induces some latency. FPGAs (Field Programmable Gate Arrays) can be seen as a solution to these problems. However, these types of chips are extremely complex to program, making them largely inaccessible to musicians, digital artists and makers communities. The goal of the FAST project is to enable high-level programming of FPGA-based platforms for multichannel ultra-low-latency audio processing using the Faust programming language (a standard in the field of computer music). We plan to use this system for various applications ranging from sound synthesis and processing to active sound control and artificial sound field/room acoustics.
-
-<img src="img/overview.jpg" class="mx-auto d-block" width="60%">
-
 ## Timeline
 
-FAST begun in March 2021 and will last 42 months. 
+FAST begun in March 2021 and ended in January 2025. 
 
 ## Partners
+
+FAST involved 6 permanent faculty, 2 PhD students, 1 postdoc, and 3 interns, spread out over 3 main institutions: GRAME-CNCM, CITI Lab @ INSA Lyon, and LMFA @ École Centrale Lyon.
 
 ### GRAME-CNCM
 
@@ -63,7 +33,7 @@ CITI is an academic laboratory associated with [INSA Lyon](https://www.insa-lyon
 
 ### LMFA @ École Centrale Lyon
 
-The LMFA is the Laboratoire de Mécanique des Fluides et d'Acoustique (Fluid Mechanics and Acoustics Laboratory). It hosts researchers from [École Centrale Lyon](https://www.ec-lyon.fr/), [INSA Lyon](https://www.insa-lyon.fr/en/), [Université Claude Bernard Lyon 1](https://www.univ-lyon1.fr/) and [CNRS](http://www.cnrs.fr/fr). The members of LMFA associated to the FAST project specialize in acoustics active control which is one of the focus of FAST.  
+The LMFA is the Laboratoire de Mécanique des Fluides et d'Acoustique (Fluid Mechanics and Acoustics Laboratory). It hosts researchers from [École Centrale Lyon](https://www.ec-lyon.fr/), [INSA Lyon](https://www.insa-lyon.fr/en/), [Université Claude Bernard Lyon 1](https://www.univ-lyon1.fr/) and [CNRS](http://www.cnrs.fr/fr). The members of LMFA associated to the FAST project specialize in acoustics active control which is one of the focus of FAST.
 
 <center>
 <img src="img/logoANR.png" width="12%">
